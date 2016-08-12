@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFault-InvalidSubscriptionId">
+    <DisplayName>RaiseFault-InvalidSubscriptionId</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">\{"error":"Invalid request : Invalid subscriptionId", "code":400} </Payload>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>"Invalid request"</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

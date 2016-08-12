@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="19" name="pizza-tracker-v1">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1471024677690</CreatedAt>
+    <CreatedBy>sbhuyan@miraclesoft.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>pizza-tracker-v1</DisplayName>
+    <LastModifiedAt>1471024677690</LastModifiedAt>
+    <LastModifiedBy>sbhuyan@miraclesoft.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignMessage-DeleteRecord</Policy>
+        <Policy>AssignMessage-GenerateRequest</Policy>
+        <Policy>AssignMessage-GenerateResponse</Policy>
+        <Policy>AssignMessage-OrderStatusUpdate</Policy>
+        <Policy>ExtractVariables-OrderId</Policy>
+        <Policy>ExtractVariables-subscriptionId</Policy>
+        <Policy>InvalidateCache-FlushOrderStatus</Policy>
+        <Policy>JavaScript-DynamicEndpoint</Policy>
+        <Policy>JavaScript-GetResponseBody</Policy>
+        <Policy>JavaScript-InitRequest</Policy>
+        <Policy>JavaScript-SetPTResponse</Policy>
+        <Policy>JavaScript-SetResponseBody</Policy>
+        <Policy>JavaScript-SubscriptionIdValidation</Policy>
+        <Policy>LookupCache-GetOrdersStatus</Policy>
+        <Policy>PopulateCache-CreateOrderStatus</Policy>
+        <Policy>RaiseFault-DataNotFound</Policy>
+        <Policy>RaiseFault-InvalidOrderId</Policy>
+        <Policy>RaiseFault-InvalidSubscriptionId</Policy>
+        <Policy>ServiceCallout_PTService</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://DynamicEndpoint.js</Resource>
+        <Resource>jsc://GetResponseBody.js</Resource>
+        <Resource>jsc://InitRequest.js</Resource>
+        <Resource>jsc://SetPTResponse.js</Resource>
+        <Resource>jsc://SetResponseBody.js</Resource>
+        <Resource>jsc://SubscriptionIdValidation.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

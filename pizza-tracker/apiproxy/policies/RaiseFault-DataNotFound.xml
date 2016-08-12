@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFault-DataNotFound">
+    <DisplayName>RaiseFault-DataNotFound</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">\{"error":"tracking information was not found for Subscription ID", "code":404} </Payload>
+            <StatusCode>404</StatusCode>
+            <ReasonPhrase>tracking information was not found for Subscription ID</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

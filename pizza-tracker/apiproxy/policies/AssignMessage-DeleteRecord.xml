@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessage-DeleteRecord">
+    <DisplayName>AssignMessage-DeleteRecord</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">{
+        "Status":Record Deleted successfully in Cache.  
+        }</Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
